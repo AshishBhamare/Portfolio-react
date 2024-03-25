@@ -1,11 +1,6 @@
 React Portfolio Website
 This is a React-based portfolio website showcasing my projects, skills, and experience.
 
-Features
-Project Showcase: Display your projects with descriptions, screenshots, and links.
-Skills Section: Highlight your skills, technologies, and tools.
-About Me: Provide a brief introduction about yourself and your interests.
-Contact Information: Include ways for visitors to get in touch with you.
 Technologies Used
 React
 JavaScript
