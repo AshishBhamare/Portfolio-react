@@ -32,7 +32,7 @@ height: 60vh;
 z-index:3;
 line-height: 1.5;
 cursor: pointer;
-
+overflow: auto;
 font-family: 'Ubuntu Mono',monospace;
 display: flex;
 flex-direction: column;
