@@ -9,7 +9,9 @@ cursor:pointer;
 position:fixed;
 left:8rem;
 top:3rem;
+width:10px;
 z-index:10;
+
 
 &>*:nth-child(1){
     animation-delay: 0.2s;
@@ -38,6 +40,7 @@ const play = keyframes`
 100%{
     transform:scaleY(1);
 }
+
 `
 const Line = styled.span`
 background: ${props => props.theme.text};
@@ -58,22 +61,22 @@ const SoundBar = () => {
     const handleClick = () => {
         setClick(!click);
 
-        if(!click){
+        if (!click) {
             ref.current.play();
-        }else{
+        } else {
             ref.current.pause();
         }
     }
     return (
         <Box onClick={() => handleClick()}>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
+            <Line click={click} />
+            <Line click={click} />
+            <Line click={click} />
+            <Line click={click} />
+            <Line click={click} />
 
 
-            <audio src={music} ref={ref}  loop />
+            <audio autoPlay src={music} ref={ref} loop />
         </Box>
     )
 }

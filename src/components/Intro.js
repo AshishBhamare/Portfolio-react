@@ -16,6 +16,16 @@ width: 65vw;
 height:55vh;
 display: flex;
 
+@media screen and (max-width: 729px) {
+    .kzjVBm {
+      right: 5px;
+    }
+  
+    .bvNHbn .pic{
+      top: 30%;
+    }
+  }
+
 
 background: linear-gradient(
     to right,
@@ -74,7 +84,7 @@ const Intro = () => {
     return (
         <Box
         initial={{height:0}}
-        animate={{height: '55vh'}}
+        animate={{height: '45vh'}}
         transition={{ type: 'spring', duration:2, delay:1 }}
         >
             <SubBox>

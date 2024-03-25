@@ -7,6 +7,7 @@ import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang, CircleLoader } from './AllSvgs'
 import Intro from './Intro';
+import '../assets/app.css';
 
 
 const MainContainer = styled.div`
@@ -141,7 +142,7 @@ const Main = () => {
             <SocialIcons theme={click ? 'dark' :'light'} />
            
             <Center click={click}>
-                <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
+                <YinYang  onClick={()=> handleClick()} width={click ? 50 : 200} height={click ? 50 : 200} fill='currentColor' />
                 <span style={{'font-size': '20px'}}>Click on the wheel...</span>
             </Center>
 

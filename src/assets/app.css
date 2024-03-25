@@ -121,3 +121,13 @@
       background-color: #00dfa2;
     }
   }
+
+  @media screen and (max-width: 729px) {
+    .kzjVBm {
+      right: 10px !important;
+    }
+  
+    .bvNHbn .pic{
+      top: 30%;
+    }
+  }
