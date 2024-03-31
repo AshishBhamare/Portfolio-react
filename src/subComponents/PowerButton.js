@@ -4,6 +4,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { PowerBtn } from '../components/AllSvgs'
+import welcome from '../assets/Images/man_raising_hand.gif'
 
 
 const Power = styled.button`
@@ -12,12 +13,11 @@ top: 2rem;
 left: 50%;
 transform: translate(-50%, 0);
 
-background-color: #f4f7fc;
+background-color: transparent;
 padding: 0.3rem;
-border-radius: 50%;
-border: 1px solid #000;
-width: 2.5rem;
-height: 2.5rem;
+border: none;
+width: 3.5rem;
+height: 3.5rem;
 
 display: flex;
 justify-content: center;
@@ -27,8 +27,8 @@ z-index:3;
 cursor: pointer;
 
 &:hover{
-    background-color: rgba(0,255,0,0.4);
-    box-shadow: 0 0 8px 6px rgba(0,255,0,0.2);
+    border-radius: 20%;
+    box-shadow: 0 0 8px 2px #0003;
 }
 
 &>*:first-child{
@@ -41,7 +41,7 @@ const PowerButton = () => {
     return (
         <Power>
         <NavLink to="/">
-        <PowerBtn width={30} height={30} fill='currentColor' />
+            <a href='/'><img src={welcome} width={60} height={60} /></a>
         </NavLink>
         </Power>
     )

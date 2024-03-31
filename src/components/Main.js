@@ -11,17 +11,29 @@ import '../assets/app.css';
 
 
 const MainContainer = styled.div`
-background: ${props => props.theme.body};
+background: linear-gradient(313deg,white,#6b96d0,#d03a66);;
 width: 100vw;
 height: 100vh;
 overflow:hidden;
-
+animation: gradient-animation 18s ease infinite;
 position: relative;
 
 h2,h3,h4,h5,h6{
   font-family:'Karla', sans-serif ;
   font-weight:500;
 }
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 `
 
 const Container = styled.div`
@@ -83,13 +95,13 @@ from{
     transform: rotate(0);
 }
 to{
-    transform: rotate(360deg);
+    transform: rotate(0);
 }
 `
 
 const Center = styled.button`
 position: absolute;
-top: ${props => props.click ? '85%' :'50%'  };
+top: ${props => props.click ? '93%' :'50%'  };
 left: ${props => props.click ? '92%' :'50%'  };
 transform: translate(-50%,-50%);
 border: none;
@@ -142,7 +154,7 @@ const Main = () => {
             <SocialIcons theme={click ? 'dark' :'light'} />
            
             <Center click={click}>
-                <YinYang  onClick={()=> handleClick()} width={click ? 50 : 200} height={click ? 50 : 200} fill='currentColor' />
+                <CircleLoader  onClick={()=> handleClick()} width={click ? 50 : 200} height={click ? 50 : 200} fill='currentColor' />
                 <span style={{'font-size': '20px'}}>Click on the wheel...</span>
             </Center>
 

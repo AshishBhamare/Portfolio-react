@@ -9,13 +9,13 @@ import PowerButton from "../subComponents/PowerButton";
 
 import { Work } from "../data/WorkData";
 import Card from "../subComponents/Card";
-import { YinYang } from "./AllSvgs";
+import { CircleLoader } from "./AllSvgs";
 import BigTitlte from "../subComponents/BigTitlte";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
 
-  height: 400vh;
+  height: 700vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -86,7 +86,7 @@ const WorkPage = () => {
           ))}
         </Main>
         <Rotate ref={yinyang}>
-          <YinYang width={80} height={80} fill={DarkTheme.text} />
+          <CircleLoader width={80} height={80} fill={DarkTheme.text} />
         </Rotate>
 
         <BigTitlte text="WORK" top="10%" right="20%" />
