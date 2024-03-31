@@ -11,7 +11,7 @@ import '../assets/app.css';
 
 
 const MainContainer = styled.div`
-background: linear-gradient(313deg,white,#6b96d0,#d03a66);;
+background: linear-gradient(313deg,white,#6b96d0,#d03a66);
 width: 100vw;
 height: 100vh;
 overflow:hidden;
@@ -172,7 +172,7 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    Say hi..
+                    Ping me...
                 </motion.h2>
             </Contact>
             <BLOG to="/work">
@@ -205,7 +205,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    About
+                    About me
                 </motion.h2>
             </ABOUT>
             <SKILLS to="/skills">
@@ -221,7 +221,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills
+                    Skill set
                 </motion.h2>
             </SKILLS>
 

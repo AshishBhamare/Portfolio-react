@@ -9,11 +9,11 @@ import { Github } from '../components/AllSvgs';
 const Box = styled(motion.li)`
 width: 16rem;
 height: 45vh;
-background-color: ${props => props.theme.text};
-color:${props => props.theme.body};
+background: gray;
+color:black;
 padding: 1.5rem 2rem;
 margin-right: 8rem;
-border-radius: 0 50px 0 50px;
+border-radius: 20px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -21,7 +21,7 @@ border: 1px solid ${props => props.theme.body};
 transition: all 0.2s ease;
 
 &:hover{
-background-color: ${props => props.theme.body};
+background: ${props => props.theme.body};
 color:${props => props.theme.text};
 border: 1px solid ${props => props.theme.text};
 
@@ -32,7 +32,8 @@ font-size: calc(1em + 0.5vw);
 `
 
 const Description = styled.h2`
-font-size: calc(0.8em + 0.3vw);
+font-size: 15px;
+line-height: 1.5;
 font-family: 'Karla',sans-serif;
 font-weight: 500;
 `

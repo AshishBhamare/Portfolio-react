@@ -42,7 +42,7 @@ export const Work = [
     {
         id: 5,
         name: "Streaming channel design and devlopment",
-        description: "This Roku channel delivers a rich learning experience to endusers, specially crafted to meet the client's specifications and exceed user expectations.",
+        description: "This Roku channel delivers a rich learning experience to endusers, specially crafted to meet the client's specifications and prime user experience.",
         tags: ["AdobeXD", "Brightscript", "XML"],
 
         demo: "https://dribbble.com/shots/23890571-Streaming-channel-UI-design-Roku",
@@ -52,10 +52,8 @@ export const Work = [
     {
         id: 6,
         name: "Shopify Dashboard clone",
-        description: "Created clone of Shopify Admin Dashboard using nodejs for client",
+        description: "Developed a replica of the Shopify Admin Dashboard using Node.js. Offering a comprehensive solution that mirrors the functionality and aesthetics of the original Shopify Admin Dashboard to increse the staff members for the client requirements using Shopify api's",
         tags: ["node", "RestAPI"],
-
-        demo: "",
         github: ""
 
     },
@@ -84,11 +82,8 @@ export const Work = [
         name: "And many more...",
         description: "",
         tags: [""],
-
-        demo: "face",
         github: ""
 
-    },
-
+    }
 
 ] 

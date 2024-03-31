@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import { lightTheme } from './Themes';
+import { DarkTheme } from './Themes';
 import { Design, Develope } from './AllSvgs';
 
 
@@ -25,7 +25,7 @@ align-items: center;
 const Main = styled.div`
 border: 2px solid ${props => props.theme.text};
 color: ${props => props.theme.text};
-background-color: ${props => props.theme.body};
+background-color: transparent;
 padding: 2rem;
 width: 30vw;
 height: 60vh;
@@ -84,7 +84,7 @@ ul,p{
 
 const MySkillsPage = () => {
     return (
-        <ThemeProvider theme={lightTheme}>
+        <ThemeProvider theme={DarkTheme}>
             <Box>
 
                 <LogoComponent theme='light' />
@@ -148,7 +148,7 @@ const MySkillsPage = () => {
 
                 </Main>
 
-                <BigTitle text="SKILLS" top="80%" right="30%" />
+                <BigTitle text="SKILLS" top="75%" right="30%" />
 
             </Box>
 
